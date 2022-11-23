@@ -20,6 +20,13 @@
     min-height: 1px;
     padding-right: 10px;
 }
+.log2 {
+    width: 100%;
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-right: 10px;
+}
 
 .reg {
     width: 50%;

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Авторизация</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <!-- Our stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/aytal.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-md space-y-8">
+            <div>
+                <img class="mx-auto h-12 w-auto" src="">
+                <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Авторизация</h2>
+                <p class="mt-2 text-center text-sm text-gray-600">
+                    Войти в
+                    <a href="/auth_admin.html" class="font-medium text-indigo-600 hover:text-indigo-500">Админ панель</a>
+                </p>
+            </div>
+
+
+
+            <div class="-space-y-px rounded-md shadow-sm">
+                <div>
+                    <label for="email-address" class="sr-only">Email</label>
+                    <input id="email" name="email" type="email" class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                        placeholder="Email">
+                </div>
+
+                <div>
+                    <label for="email-address" class="sr-only">Пароль</label>
+                    <input id="password" name="password" type="password" class="relative block w-full appearance-none rounded-none border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                        placeholder="Пароль">
+                </div>
+
+               
+            </div>
+
+
+            <div class="reglog">
+
+                <div class="log2">
+                    <button class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" onclick="login()">
+                            Войти
+                        </button>
+                </div>
+
+            
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script src="/js/auth_admin.js"></script>
+
+</html>
