@@ -1,0 +1,30 @@
+.reglog {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.log {
+    width: 50%;
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-right: 10px;
+}
+
+.reg {
+    width: 50%;
+    position: relative;
+    float: right;
+    min-height: 1px;
+    padding-left: 10px;
+}

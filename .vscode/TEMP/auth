@@ -1,0 +1,21 @@
+    <div id="content_container">
+        <div id="form_container">
+            <div id="form_header_container">
+                <h2 id="form_header">Авторизация</h2>
+            </div>
+
+            <div id="form_content_container">
+                <div id="form_content_inner_container">
+                    <input type="text" id="full_name" placeholder="Название команды">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Пароль">
+
+                    <div id="button_container">
+                        <button onclick="login()">Войти</button>
+                        <button onclick="register()">Зарегестрироваться</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
