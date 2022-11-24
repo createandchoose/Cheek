@@ -11,12 +11,22 @@ var firebaseConfig = {
 
  function upload(){
 	  var image=document.getElementById('image').files[0];
+	  var imageVideo=document.getElementById('imageVideo').files[0];
+
 	  var post=document.getElementById('post').value;
 	  var description=document.getElementById('description').value;
+	  var video=document.getElementById('video').value;
 	  var date=document.getElementById('date').value;
 	  var imageName=image.name;
+	  var imageVideoName=imageVideo.name;
+
+	  
 	  var storageRef=firebase.storage().ref('hackaton/'+imageName);
+	  var storageRef=firebase.storage().ref('hackaton/'+imageVideoName);
+
 	  var uploadTask=storageRef.put(image);
+	  var uploadTask=storageRef.put(imageVideo);
+
 	  uploadTask.on('state_changed',function(snapshot){
 			 var progress=(snapshot.bytesTransferred/snapshot.totalBytes)*100;
 			 console.log("upload is "+progress+" done");
@@ -29,8 +39,13 @@ var firebaseConfig = {
 				firebase.database().ref('hackaton/').push().set({
 						text:post,
 						description:description,
+						video:video,
+
 						date:date,
-						imageURL:downloadURL
+						imageURL:downloadURL,
+						videoURL:downloadURL
+
+						
 				},function(error){
 					 if(error){
 						  alert("Проблемы с соединением");
