@@ -19541,28 +19541,32 @@ section {
 .clients-img {
     width: 100%;
 }
-
-@media (min-width: 576px) {
+@media (min-width: 0px) {
     .clients-img1 {
         max-width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .clients-img1 {
+        max-width: 40%;
     }
 }
 
 @media (min-width: 768px) {
     .clients-img1 {
-        max-width: 80%;
+        max-width: 60%;
     }
 }
 
 @media (min-width: 992px) {
     .clients-img1 {
-        max-width: 60%;
+        max-width: 80%;
     }
 }
 
 @media (min-width: 1200px) {
     .clients-img1 {
-        max-width: 40%;
+        max-width: 100%;
     }
 }
 
