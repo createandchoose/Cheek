@@ -20,6 +20,7 @@
     min-height: 1px;
     padding-right: 10px;
 }
+
 .log2 {
     width: 100%;
     position: relative;
@@ -34,4 +35,17 @@
     float: right;
     min-height: 1px;
     padding-left: 10px;
+}
+
+#head-main {
+    width: 500px;
+}
+
+@media only screen and (max-device-width: 580px) {
+    #head-main {
+        width: auto;
+    }
+    .home {
+        height: 0px;
+    }
 }
