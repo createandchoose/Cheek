@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДОБАВЛЕНИЕ ПУБЛИКАЦИИ</title>
+    <!-- Cool Google Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+   <!-- Our stylesheet -->
+   <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <section class="contactus" id="contact">
+        <div class="container">
+            <form  action="https://formspree.io/f/mpznkakr" method="POST"  id="contactForm">
+                <div class="alert">Отправлено</div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="font-weight-medium text-dark ">ОСТАВЬТЕ ЗАЯВКУ НА ПРИЕМ</h3>
+                        <h5 class="text-dark">Администратор перезвонит в ближайшее время и назначит время приема
+                        </h5>
+                    </div>
+                </div>
+                <div class="form_inputs ml-auto align-items-center">
+                    <div class="inputBox col-sm-3">
+                        <input type="text" name="Name" id="name" placeholder="Имя"  required=""/>
+                    </div>
+
+                    <div class="inputBox col-sm-3">
+                        <input type="tel" name="Tel" id="numberid" placeholder="Телефон"  required=""/>
+                    </div>
+
+                    <div class="inputBox col-sm-3">
+                        <select name="attending" id="category">
+                            <option value="не выбрано">Услуга</option>
+                            <option value="Терапия">Терапия</option>
+                            <option value="Пародонтология">Пародонтология</option>
+                            <option value="Хирургия">Хирургия</option>
+                            <option value="Имплантация и костная пластика">Имплантация и костная пластика</option>
+                            <option value="Ортопедия">Ортопедия</option>
+                            <option value="Ортодонтия">Ортодонтия</option>
+                            <option value="Отбеливание зубов">Отбеливание зубов</option>
+                            <option value="Ортопантомография">Ортопантомография</option>
+                            <option value="Проффессиональная гигиена полости рта">Проф. гигиена полости рта</option>
+                            <option value="Детский прием">Детский прием</option>
+                        </select>
+                    </div>
+
+                    <div class="inputBox col-sm-3">
+                        <button type="submit" class="btn">Записаться</button>
+                        <p id="my-form-status"></p>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+
+<script src="/js/submit.js"></script>
+</html>
