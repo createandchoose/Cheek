@@ -7,7 +7,6 @@ var firebaseConfig = {
 	messagingSenderId: "272145172180",
 	appId: "1:272145172180:web:37db41f797ecdf81ab9d41"
   };
-  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
  
 
@@ -19,11 +18,8 @@ var firebaseConfig = {
   
   function getdata(){
 		firebase.database().ref('hackaton/').once('value').then(function(snapshot){
-		  //get your posts div
 		  var posts_div=document.getElementById('posts');
-		  //remove all remaining data in that div
 		  posts.innerHTML="";
-		  //get data from firebase
   
 		  var data=snapshot.val();
 		  console.log(data);

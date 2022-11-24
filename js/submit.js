@@ -9,10 +9,8 @@ const firebaseConfig = {
 	appId: "1:272145172180:web:37db41f797ecdf81ab9d41"
 };
 
-// initialize firebase
 firebase.initializeApp(firebaseConfig);
 
-// reference your database
 var contactFormDB = firebase.database().ref("contactForm");
 
 
@@ -28,15 +26,12 @@ function submitForm(e) {
 
  saveMessages(name, numberid, category);
 
- //   enable alert
  document.querySelector(".alert").style.display = "block";
 
- //   remove the alert
  setTimeout(() => {
 	document.querySelector(".alert").style.display = "none";
  }, 3000);
 
- //   reset the form
 
 }
 
