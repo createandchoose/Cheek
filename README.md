@@ -1,27 +1,25 @@
 # 2022 Cheek hackathon Team README.md
-# [MUSCLE.md](https://2022-daelim-hackathon.vercel.app/)
-## 🖥️ Team
+# [Cheek Website](https://2022-daelim-hackathon.vercel.app/)
+## 🖥️ Команда
 
 <table align="center">
   <tr>
-    <br />🦄Design</td>
-    <td align="center"><a href="https://github.com/Mallang-Mallang"><img src="https://avatars.githubusercontent.com/u/70959328?v=4" width="100px;" alt=""/><br /><sub><b>Mallang-Mallang</b></sub></a><br />Managment</td>
-    <td align="center"><a href="https://github.com/SOPLAY"><img src="https://avatars.githubusercontent.com/u/40691745?v=4" width="100px;" alt="이미지"/><br /><sub><b>SOPLAY</b></sub></a><br />🌭Web -FullStack</td>
-    <td align="center"><a href="https://github.com/UBamtol"><img src="https://avatars.githubusercontent.com/u/98325285?v=4" width="100px;" alt="이미지"/><br /><sub><b>UBamtol</b></sub></a><br />🦄Front-End</td>
-    <td align="center"><a href="https://github.com/Mallang-Mallang"><img src="https://avatars.githubusercontent.com/u/70959328?v=4" width="100px;" alt=""/><br /><sub><b>Mallang-Mallang</b></sub></
+    <td align="center"><a href="https://github.com/Mallang-Mallang"><img src="https://avatars.githubusercontent.com/u/91510758?v=4" width="100px;" alt=""/><br /><sub><b>Гилёва Вероника</b></sub></a><br />🦊Design</td>
+    <td align="center"><a href="https://github.com/Mallang-Mallang"><img src="https://avatars.githubusercontent.com/u/4111118?v=4" width="100px;" alt=""/><br /><sub><b>Анатолий Осипов</b></sub></a><br />🧑‍💻Managment</td>
+    <td align="center"><a href="https://github.com/SOPLAY"><img src="https://avatars.githubusercontent.com/u/64827737?v=4" width="100px;" alt="이미지"/><br /><sub><b>Артём Бойтунов</b></sub></a><br />🔥Web -FullStack</td>
+    <td align="center"><a href="https://github.com/UBamtol"><img src="https://avatars.githubusercontent.com/u/42153584?v=4" width="100px;" alt="이미지"/><br /><sub><b>Попов Айтал</b></sub></a><br />🦄Front-End</td>
   </tr>
 </table>
 
-## Convention
+## О проектк
 
-- 모든 components 는 React Arrow Function Component 로 작성한다.
-- 컴포넌트 내부에서 style 관련 요소들은 하단에 위치 시킨다 ( 핵심 로직을 상단에 위치 )
-- components 의 파일명은 UpperCamelCase로 작성
-- .ts 와 .tsx 의 구분은 html 태그 유무로 구분한다.
+Сheck Flow это платформа с набором инструментов для работы с IT-талантами: проведение хакатонов, командообразование,  шаг №1  который продвинет и поможет тебе  раскрыться как IT-специалист.
 
 ## Stack
 
-- Prisma
+- JavaScript
+- FireBase
+- JQuery
 - Tailwindcss
 - headlessUI
 - heroicons
