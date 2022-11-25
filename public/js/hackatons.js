@@ -47,7 +47,7 @@ var firebaseConfig = {
   
 
   function submit(){
-	window.open('submit.html');
+	window.open('form.html');
   }
 
 

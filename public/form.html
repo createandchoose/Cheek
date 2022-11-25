@@ -1,9 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CheckFlow</title>
@@ -34,9 +32,7 @@
                     <a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
                 </div>
                 <ul class="navbar-nav ml-auto align-items-center">
-                    <!-- <li class="nav-item active">
-                        <a class="nav-link" href="#home">Главное <span class="sr-only">(current)</span></a>
-                    </li> -->
+            
                     <li class="nav-item">
                         <a class="nav-link active" href="#services">Хакатоны</a>
                     </li>
@@ -71,8 +67,8 @@
 
 					<div class="row">
 						<div class="col-sm-12">
-							<h3 class="font-weight-medium text-dark ">ОСТАВЬТЕ ЗАЯВКУ НА ПРИЕМ</h3>
-							<h5 class="text-dark">Администратор перезвонит в ближайшее время и назначит время приема
+							<h3 class="font-weight-medium text-dark ">ОСТАВЬТЕ ЗАЯВКУ НА УЧАСТИЕ</h3>
+							<h5 class="text-dark">В ближайщее время трекер свяжется с вами
 							</h5>
 						</div>
 					</div>
@@ -86,19 +82,7 @@
 						</div>
 
 						<div class="inputBox col-sm-3">
-							<select name="attending" id="category">
-								<option value="не выбрано">Услуга</option>
-								<option value="Терапия">Терапия</option>
-								<option value="Пародонтология">Пародонтология</option>
-								<option value="Хирургия">Хирургия</option>
-								<option value="Имплантация и костная пластика">Имплантация и костная пластика</option>
-								<option value="Ортопедия">Ортопедия</option>
-								<option value="Ортодонтия">Ортодонтия</option>
-								<option value="Отбеливание зубов">Отбеливание зубов</option>
-								<option value="Ортопантомография">Ортопантомография</option>
-								<option value="Проффессиональная гигиена полости рта">Проф. гигиена полости рта</option>
-								<option value="Детский прием">Детский прием</option>
-							</select>
+							<input type="text" name="Name" id="team" placeholder="Название команды"  required=""/>
 						</div>
 
 						<div class="inputBox col-sm-3">
@@ -111,24 +95,22 @@
 			</div>
 		</section>
     </div>
-    <footer class="footer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <img src="images/logo-ck.svg" alt="logo" class="mr-3">
-                        <p class="mb-0 text-small pt-1">© 2021-2022 <a href="https://www.bootstrapdash.com" class="text-white" target="_blank">Check</a>. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
     <script src="vendors/base/vendor.bundle.base.js"></script>
     <script src="vendors/owl.carousel/js/owl.carousel.js"></script>
     <script src="vendors/aos/js/aos.js"></script>
     <script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
+    
     <script src="js/template.js"></script>
+    <script src="js/form.js"></script>
+
     <!-- Code injected by live-server -->
     <script>
         // <![CDATA[  <-- For SVG support
@@ -168,8 +150,7 @@
     </script>
 
 
-    <script src="chrome-extension://pbcpfbcibpcbfbmddogfhcijfpboeaaf/assets/js/lib/webcomponents-bundle.js"></script>
-    <script src="chrome-extension://pbcpfbcibpcbfbmddogfhcijfpboeaaf/amino-inspect.min.js"></script>
+
     <amino-inspect></amino-inspect>
     <script>
         var returnedSuggestion = ''
@@ -265,7 +246,6 @@
             </div>
         </div>
     </div>
-    <script src="chrome-extension://pbcpfbcibpcbfbmddogfhcijfpboeaaf/assets/js/lib/webcomponents-bundle.js"></script>
 </body>
 
 </html>
