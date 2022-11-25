@@ -1,3 +1,15 @@
+<div align="center">
+
+<img src=".github/Logo.png" width="150px" draggable="false"><br>
+
+# 2022 Cheek
+
+Набором инструментов для работы с IT-талантами
+
+<img src="https://i.imgur.com/wWiF9t1.png" draggable="false"><br>
+</div>
+
+
 # 2022 Cheek hackathon Team README.md
 # [Cheek Website](https://2022-daelim-hackathon.vercel.app/)
 ## 🖥️ Команда
