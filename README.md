@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src=".github/Logo.png" width="150px" draggable="false"><br>
+<img src=".github/ico.svg" width="150px" draggable="false"><br>
 
-# 2022 Cheek
+# 2022 Cheek [Website](https://2022-daelim-hackathon.vercel.app/)
 
 Набором инструментов для работы с IT-талантами
 
@@ -10,8 +10,6 @@
 </div>
 
 
-# 2022 Cheek hackathon Team README.md
-# [Cheek Website](https://2022-daelim-hackathon.vercel.app/)
 ## 🖥️ Команда
 
 <table align="center">
@@ -32,46 +30,9 @@
 - JavaScript
 - FireBase
 - JQuery
+- Chart.js
+- interact.js
+- Formspree
 - Tailwindcss
 - headlessUI
 - heroicons
-
-## Folder path
-
-```js
-./core
-	|-/components
-			|-/commons	  //공통 컴포넌트 정의 ex) Button, Container
-	|-/atoms          //Recoil Atoms
-	|-/hooks          //커스텀 hooks 정의
-
-./pages             //Client Side pages
-	|-/api            //Server Side
-
-./public
-	|-/assets         //프로젝트에서 사용되는 정적이미지 파일을 저장한다.
-
-./prisma            //Prisma 파일 작성
-./styles            //global style 작성
-.tailwind.config.js //tailwindcss 설정 작성
-```
-
-## Before Starting
-
-### 의존성 패키지 설치
-
-```
-yarn
-```
-
-### 개발 환경 DB migration
-
-```
-npx prisma migration
-```
-
-### 개발 서버 시작
-
-```
-yarn dev
-```
