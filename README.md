@@ -2,7 +2,7 @@
 
 <img src=".github/ico.svg" width="150px" draggable="false"><br>
 
-# 2022 Cheek [Website](https://2022-daelim-hackathon.vercel.app/)
+# 2022 Cheek [Website](https://cheek-d4b6d.firebaseapp.com)
 
 Набором инструментов для работы с IT-талантами
 
