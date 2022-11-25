@@ -37,6 +37,33 @@
 - headlessUI
 - heroicons
 
+## Устновка
+
+```
+npm i
+```
+
+```
+npm install firebase
+```
+
+```
+npm install -g firebase-tools.
+```
+
+```
+firebase login
+```
+
+```
+firebase init
+```
+
+## Деплой
+
+```
+firebase deploy
+```
 
 
 # HACK-the-ICE 4.0 [ [Website](https://ityakutia.com/hack-the-ice) ] [ [VK](https://vk.com/hacktheice) ] [ [Telegram](https://t.me/hacktheice) ] 
