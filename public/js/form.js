@@ -45,7 +45,7 @@ const saveMessages = (name, numberid, team) => {
     numberid: numberid,
     team: team,
   });
-  window.open('admin_add.html');
+  window.open('checkpoints.html');
 
 };
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДОБАВЛЕНИЕ ПУБЛИКАЦИИ</title>
+    <!-- Cool Google Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+   <!-- Our stylesheet -->
+   <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="container mt-5 " >
+        <div class="row">
+            <div class="col-sm-12">
+                <h5 class="text-dark">ДОБАВЛЕНИЕ</h5>
+                <h3 class="font-weight-medium text-dark mb-5">Трека</h3>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <form id="post-form">
+                 
+                    <textarea id="post" class="form-control" placeholder="Заголовок"></textarea>
+                    <textarea id="description" class="form-control" placeholder="Описание"></textarea>
+               	
+               
+                    <textarea id="date" class="form-control" placeholder="Дата начала"></textarea>
+                    <input type="file" class="form-control" id="image" accept="images/*">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success" onclick="upload()">Загрузить</button>
+                    </div>
+
+                </form>
+             </div>
+
+        </div>
+        <div class="row mt-4" id="posts" onclick='getdataModal(this.id)'>
+
+       
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+
+       <!-- Modal content -->
+       <div class="modal-content" id="modal-content">
+         <span class="close">&times;</span>
+         <p></p>
+       </div>
+    </div>
+</div>
+    
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+
+<script src="./js/tracks.js"></script>
+</html>

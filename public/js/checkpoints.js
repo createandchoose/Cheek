@@ -17,7 +17,7 @@ var firebaseConfig = {
   
   
   function getdata(){
-		firebase.database().ref('hackaton/').once('value').then(function(snapshot){
+		firebase.database().ref('hackaton/').limitToLast(1).once('value').then(function(snapshot){
 		  var posts_div=document.getElementById('posts');
 		  posts.innerHTML="";
   
@@ -26,13 +26,12 @@ var firebaseConfig = {
   
 		  for(let[key,value] of Object.entries(data)){
 			 
-			 posts_div.innerHTML="<div class='col-sm-4 mt-2 mb-1 '>"+
+			 posts_div.innerHTML="<div class='mt-2 mb-1 align-items-center'>"+
 			 "<div class='card' >"+
 			 "<img src='"+value.imageURL+"' class='clients-img1 align-items-center aos-init aos-animate''>"+
 			 "<div class='card-body'><p class='card-text'>"+value.text+"</p>"+
 			 "<p class='card-text-small'>"+value.description+"</p>"+
 		    "<p class='card-text'>"+value.date+"</p>"+
-			 "<button class='btn btn-danger'  onclick='submit(this.id)'>Учавствовать</button>"+
 
 			 "</div></div></div>"+posts_div.innerHTML;
   
@@ -46,9 +45,6 @@ var firebaseConfig = {
 
   
 
-  function submit(){
-	window.open('form.html');
-  }
 
 
 
