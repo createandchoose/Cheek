@@ -12,6 +12,7 @@ var firebaseConfig = {
 window.onload=function(){
     this.getdata();
     this.getdata1();
+    this.getdata2();
 }
 
 
@@ -45,25 +46,20 @@ function getdata(){
 
 function getdata1(){
     firebase.database().ref('tracks/').limitToLast(3).once('value').then(function(snapshot){
-      //get your posts div
       var tracks_div=document.getElementById('tracks');
-      //remove all remaining data in that div
       tracks.innerHTML="";
-      //get data from firebase
       let i = 0;
 while (i < 3) {
       var data=snapshot.val();
       i++;
 }
       console.log(data);
-      //now pass this data to our posts div
-      //we have to pass our data to for loop to get one by one
-      //we are passing the key of that post to delete it from database
+
 
       for(let[key,value] of Object.entries(data)){
         
         tracks_div.innerHTML="<div class='col-sm-4 mt-2 mb-1 '>"+
-        "<div class='card'  id='"+key+"' onclick='getdataModal(this.id)'>"+
+        "<div class='card'  id='"+key+"' onclick='submit(this.id)'>"+
         "<img src='"+value.imageURL+"' class='clients-img aos-init aos-animate''>"+
         "<div class='card-body'><p class='card-text-bold'>"+value.text+"</p>"+
      
@@ -76,48 +72,36 @@ while (i < 3) {
     });
 }
 
-function getdataModal(postId){
-    firebase.database().ref('tracks/' + postId).once('value').then(function(snapshot){
+
+
+
+
+
+function getdata2(){
+  firebase.database().ref('checkpoints/').once('value').then(function(snapshot){
+    var checkpoints_div=document.getElementById('checkpoints');
+    checkpoints.innerHTML="";
+
+    var data=snapshot.val();
+    console.log(data);
+
+    for(let[key,value] of Object.entries(data)){
+     
+    checkpoints_div.innerHTML="<div class='col-sm-4 mt-2 mb-1 align-items-center'>"+
+     "<div class='card' >"+
+     "<img src='"+value.imageURL+"' class='clients-img1 align-items-center aos-init aos-animate''>"+
+     "<div class='card-body'><p class='card-text'>"+value.text+"</p>"+
+     "<p class='card-text-small'>"+value.description+"</p>"+
+      "<p class='card-text'>"+value.date+"</p>"+
+
+     "</div></div></div>"+checkpoints_div.innerHTML;
+
+
+}
   
-       modalCon.innerHTML="";
-       var data=snapshot.val();
-       console.log(data);
-       
-          modalCon.innerHTML="<div class=' mt-2 mb-1 align-items-center'>"+
-          "<div class='card' >"+
-          "<div class='card-body'><p class='card-text-big'>"+snapshot.val().text+"</p>"+
-          "<img src='"+snapshot.val().imageURL+"'class='clients-img aos-init aos-animate ''>"+
-          
-          "<p class='card-text-small'>"+snapshot.val().description+"</p>"+
-          "<button class='btn btn-success'  onclick='delete_post(this.id)'>Удалить</button>"+
-          "</div></div></div>"+modalCon.innerHTML;
-
-
-       
-    
-    });
+  });
 }
 
-var modal = document.getElementById("myModal");
-var modalCon = document.getElementById("modal-content");
-var span = document.getElementsByClassName("close")[0];
-
-
-
-
-tracks.onclick = function() {
-  modal.style.display = "block";
-
-  
-}
-
-
-span.onclick = function() {
-    modal.style.display = "none";
-  }
-  
-  window.onclick = function(event) {
-    if (event.target == modal) {
-       modal.style.display = "none";
-    }
+function submit(){
+	window.open('./user_stream.html');
   }

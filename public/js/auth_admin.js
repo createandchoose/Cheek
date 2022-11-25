@@ -35,10 +35,10 @@ function register() {
 					last_login: Date.now()
 			  }
 
-			  database_ref.child('users/' + user.uid).set(user_data)
+			  database_ref.child('admins/' + user.uid).set(user_data)
 
 			  alert('Аккаунт создан')
-			  window.open('admin_add.html');
+			  window.open('./admins_menu.html');
 		 })
 		 .catch(function(error) {
 			  var error_code = error.code
@@ -71,7 +71,7 @@ function login() {
 
 			  // DOne
 			  alert('Успешный вход')
-			  window.open('admin_add.html');
+			  window.open('./admin_menu.html');
 
 		 })
 		 .catch(function(error) {

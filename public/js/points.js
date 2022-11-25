@@ -10,20 +10,21 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-var contactFormDB = firebase.database().ref("contactForm");
+var contactFormDB = firebase.database().ref("points");
 
 
-document.getElementById("contactForm").addEventListener("submit", submitForm);
+document.getElementById("pointForm").addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
 
-  var name = getElementVal("name");
-  var numberid = getElementVal("numberid");
+  var teamid = getElementVal("teamid");
   var team = getElementVal("team");
+  var points = getElementVal("points");
+  var category = getElementVal("category");
   
 
-  saveMessages(name, numberid, team);
+  saveMessages(team, points, category, teamid);
 
   document.querySelector(".alert").style.display = "block";
 
@@ -34,18 +35,19 @@ function submitForm(e) {
 
 }
 
-const saveMessages = (name, numberid, team) => {
+const saveMessages = (team, points, category, teamid) => {
   
   var newContactForm = contactFormDB.push();
 
-  var newContactForm = firebase.database().ref("contactForm").child(team);
+  var newContactForm = firebase.database().ref("points").child(teamid);
 
   newContactForm.set({
-    name: name,
-    numberid: numberid,
-    team: team,
+    label: team,
+    value: points,
+    checkpoint: category,
+    teamid: teamid,
   });
-  window.open('./hack_menu.html');
+
 
 };
 

@@ -10,242 +10,102 @@
     <link rel="stylesheet" href="vendors/owl.carousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="vendors/aos/css/aos.css">
     <link rel="stylesheet" href="vendors/jquery-flipster/css/jquery.flipster.css">
-    <link rel="stylesheet" href="/">
+    <link rel="stylesheet" href="./css/aytal.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="images/favicon.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    
+    <link rel="shortcut icon" href="./images/favicon.png" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" data-aos-easing="ease-in-quad" data-aos-duration="800" data-aos-delay="100">
     <div id="mobile-menu-overlay"></div>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/index.html"><img src="images/logo-ck.svg" alt="Marshmallow"></a>
+            <a class="navbar-brand" href="./index.html"><img src="./images/logo-ck.svg" alt="Marshmallow"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
 				</button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
-                    <img src="images/logo-dark.svg" class="logo-mobile-menu" alt="logo">
+                    <img src="./images/logo-ck.svg" class="logo-mobile-menu" alt="logo">
                     <a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
                 </div>
-                <ul class="navbar-nav ml-auto align-items-center">
-            
+                <ul class="navbar-nav ml-auto align-items">
+         
                     <li class="nav-item">
-                        <a class="nav-link active" href="#services">Хакатоны</a>
+                        <a class="nav-link active" href="./auth.html">Хакатоны</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#services">Треки</a>
+                        <a class="nav-link active" href="./FQA.html">FQA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#services">Организаторы</a>
+                        <a class="nav-link active" href="./index.html">Организаторы</a>
                     </li>
+                 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#services">Программа</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <img src="images/icons/srch.png">
+                        <a class="nav-link" href="./auth.html">
+                            <img src="./images/icons/srch.png">
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="auth.html">
-                            <img src="images/icons/prof.png">
+                        <a class="nav-link" href="./auth.html">
+                            <img src="./images/icons/prof.png">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="page-body-wrapper">
-        <section class="contactus" id="contact">
-			<div class="container">
-				<form  action="https://formspree.io/f/mpznkakr" method="POST"  id="contactForm">
-					<div class="alert">Отправлено</div>
-
-					<div class="row">
-						<div class="col-sm-12">
-							<h3 class="font-weight-medium text-dark ">ОСТАВЬТЕ ЗАЯВКУ НА УЧАСТИЕ</h3>
-							<h5 class="text-dark">В ближайщее время трекер свяжется с вами
-							</h5>
-						</div>
-					</div>
-					<div class="form_inputs ml-auto align-items-center">
-						<div class="inputBox col-sm-3">
-							<input type="text" name="Name" id="name" placeholder="Имя"  required=""/>
-						</div>
-
-						<div class="inputBox col-sm-3">
-							<input type="tel" name="Tel" id="numberid" placeholder="Телефон"  required=""/>
-						</div>
-
-						<div class="inputBox col-sm-3">
-							<input type="text" name="Name" id="team" placeholder="Название команды"  required=""/>
-						</div>
-
-						<div class="inputBox col-sm-3">
-							<button type="submit" class="btn">Записаться</button>
-							<p id="my-form-status"></p>
-						</div>
-					</div>
-					
-				</form>
-			</div>
-		</section>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <div class="blocked"></div>
+    <section class="contactus" id="contact">
+        <div class="container">
+            <form id="contactForm">
+            
     
-    
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
-    <script src="vendors/base/vendor.bundle.base.js"></script>
-    <script src="vendors/owl.carousel/js/owl.carousel.js"></script>
-    <script src="vendors/aos/js/aos.js"></script>
-    <script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
-    
-    <script src="js/template.js"></script>
-    <script src="js/form.js"></script>
-
-    <!-- Code injected by live-server -->
-    <script>
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function() {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function(msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        } else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-    </script>
-
-
-
-    <amino-inspect></amino-inspect>
-    <script>
-        var returnedSuggestion = ''
-        let editor, doc, cursor, line, pos
-        document.addEventListener("keydown", (event) => {
-            setTimeout(() => {
-                editor = event.target.closest('.CodeMirror');
-                if (editor) {
-                    doc = editor.CodeMirror.getDoc()
-                    cursor = doc.getCursor()
-                    line = doc.getLine(cursor.line)
-                    pos = {
-                        line: cursor.line,
-                        ch: line.length
-                    }
-                    if (event.key == "Enter") {
-                        var query = doc.getRange({
-                            line: Math.max(0, cursor.line - 10),
-                            ch: 0
-                        }, {
-                            line: cursor.line,
-                            ch: 0
-                        })
-                        window.postMessage({
-                                source: 'getSuggestion',
-                                payload: {
-                                    data: query
-                                }
-                            })
-                            //displayGrey(query)
-                    } else if (event.key == "ArrowRight") {
-                        acceptTab(returnedSuggestion)
-                    }
-                }
-            }, 0)
-        })
-
-        function acceptTab(text) {
-            if (suggestionDisplayed) {
-                doc.replaceRange(text, pos)
-                suggestionDisplayed = false
-            }
-        }
-
-        function displayGrey(text) {
-            var element = document.createElement('span')
-            element.innerText = text
-            element.style = 'color:grey'
-            var lineIndex = pos.line;
-            editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(element)
-            suggestionDisplayed = true
-        }
-        window.addEventListener('message', (event) => {
-            if (event.source !== window) return
-            if (event.data.source == 'return') {
-                returnedSuggestion = event.data.payload.data
-                displayGrey(event.data.payload.data)
-            }
-        })
-    </script>
-    <div class="b24-window-mounts">
-        <div id="b24-window-mount-0523531265129015823629985565121592" class="b24-form">
-            <div class="vue-portal-target">
-                <div class="b24-window">
-                    <div class="b24-window-overlay" style="display: none;"></div>
-                    <div class="b24-window-popup b24-window-popup-p-center" style="display: none;">
-                        <div class="b24-window-popup-wrapper" style="max-width: 600px;"><button type="button" class="b24-window-close" style="z-index: 200019;"></button>
-                            <div>
-                                <!---->
-                                <div class="b24-window-scrollable" style="z-index: 199999;">
-                                    <div class="b24-window-scroll-anchor"></div>
-                                    <!---->
-                                    <div class="b24-window-popup-body">
-                                        <div style="padding: 0px 12px 12px;">
-                                            <div></div>
-                                            <div class="b24-form-btn-container" style="padding: 12px 0px 0px;">
-                                                <div class="b24-form-btn-block"><button type="button" class="b24-form-btn">
-								Принимаю
-							</button></div>
-                                                <div class="b24-form-btn-block"><button type="button" class="b24-form-btn b24-form-btn-white b24-form-btn-border">
-								Не принимаю
-							</button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="b24-window-scroll-anchor"></div>
-                                </div>
-                                <!---->
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="font-weight-medium text-dark ">ОСТАВЬТЕ ЗАЯВКУ НА УЧАСТИЕ</h3>
+                        <h5 class="text-dark">В ближайщее время трекер свяжется с вами
+                        </h5>
                     </div>
                 </div>
-            </div>
+                <div class="form_inputs ml-auto align-items-center">
+                    <div class="inputBox col-sm-3">
+                        <input type="text" name="Name" id="name" placeholder="Имя"  required=""/>
+                    </div>
+    
+                    <div class="inputBox col-sm-3">
+                        <input type="tel" name="Tel" id="numberid" placeholder="Телефон"  required=""/>
+                    </div>
+    
+                    <div class="inputBox col-sm-3">
+                        <input type="text" name="Name" id="team" placeholder="Название команды"  required=""/>
+                    </div>
+    
+                    <div class="inputBox col-sm-3">
+                        <button type="submit" class="btn">Записаться</button>
+                        <p id="my-form-status"></p>
+                    </div>
+                </div>
+                
+            </form>
         </div>
-    </div>
-</body>
+    </section>
+    
 
+</body>
+<script src="vendors/base/vendor.bundle.base.js"></script>
+<script src="vendors/owl.carousel/js/owl.carousel.js"></script>
+<script src="vendors/aos/js/aos.js"></script>
+<script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
+<script src="./js/template.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+
+
+<script src="./js/form.js"></script>
 </html>

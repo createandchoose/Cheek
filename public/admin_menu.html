@@ -37,7 +37,7 @@
                         <a class="nav-link active" href="./FQA.html">FQA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./index.html">Организаторы</a>
+                        <a class="nav-link active" href="./admin_add.html">Cоздать хакатон</a>
                     </li>
                  
                     <li class="nav-item">
@@ -54,65 +54,58 @@
             </div>
         </div>
     </nav>
+   
+    <div class="page-body-wrapper">
+        <div class="blocked"></div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h5 class="text-dark">МОИ</h5>
+                    <h3 class="font-weight-medium text-dark mb-5">ХАКАТОНЫ</h3>
+                </div>
+            </div>
+         
+            <div class="row mt-4" id="posts" onclick='getdataModal(this.id)'>
+    
+           
+    
+        </div>
+    
+    
+        <div id="myModal" class="modal">
+    
+           <div class="modal-content" id="modal-content">
+             <span class="close">&times;</span>
+             <p></p>
+           </div>
+        </div>
+    </div>
     <div class="blocked"></div>
-    <div class="container mt-5 " >
-        <div class="row">
-            <div class="col-sm-12">
-                <h5 class="text-dark">ДОБАВЛЕНИЕ</h5>
-                <h3 class="font-weight-medium text-dark mb-5">ХАКАТОНА</h3>
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img src="./images/logo-ck.svg" alt="logo" class="mr-3">
+                        <p class="mb-0 text-small pt-1">© 2021-2022 <a href="https://www.bootstrapdash.com" class="text-white" target="_blank">Check</a>. All rights reserved.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-body">
-                <form id="post-form">
-                 
-                    <textarea id="post" class="form-control" placeholder="Заголовок"></textarea>
-                    <textarea id="description" class="form-control" placeholder="Описание"></textarea>
-               	
-               
-                    <textarea id="date" class="form-control" placeholder="Дата начала"></textarea>
-                    <input type="file" class="form-control" id="image" accept="images/*">
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success" onclick="upload()">Загрузить</button>
-                    </div>
-
-                </form>
-             </div>
-
-        </div>
-        <div class="row mt-4" id="posts" onclick='getdataModal(this.id)'>
-
-       
-
-    </div>
-
-
-    <div id="myModal" class="modal">
-
-       <!-- Modal content -->
-       <div class="modal-content" id="modal-content">
-         <span class="close">&times;</span>
-         <p></p>
-       </div>
-    </div>
-</div>
-    
-
+    </footer>
+    <script src="vendors/base/vendor.bundle.base.js"></script>
+    <script src="vendors/owl.carousel/js/owl.carousel.js"></script>
+    <script src="vendors/aos/js/aos.js"></script>
+    <script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="./js/template.js"></script>
+    <script src="./js/admins_menu.js"></script>
+   
 </body>
-<script src="vendors/base/vendor.bundle.base.js"></script>
-<script src="vendors/owl.carousel/js/owl.carousel.js"></script>
-<script src="vendors/aos/js/aos.js"></script>
-<script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
-<script src="./js/template.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-
-
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
-
-
-<script src="./js/add_public.js"></script>
 </html>

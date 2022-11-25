@@ -11,7 +11,6 @@ var firebaseConfig = {
   
    function upload(){
         var image=document.getElementById('image').files[0];
-  
         var post=document.getElementById('post').value;
         var description=document.getElementById('description').value;
         var date=document.getElementById('date').value;
@@ -60,21 +59,21 @@ var firebaseConfig = {
    
    function getdata(){
         firebase.database().ref('tracks/').once('value').then(function(snapshot){
-           var posts_div=document.getElementById('tracks');
-           posts.innerHTML="";
+           var tracks_div=document.getElementById('tracks');
+           tracks.innerHTML="";
    
            var data=snapshot.val();
            console.log(data);
    
            for(let[key,value] of Object.entries(data)){
               
-              posts_div.innerHTML="<div class='col-sm-4 mt-2 mb-1 '>"+
+               tracks_div.innerHTML="<div class='col-sm-4 mt-2 mb-1 '>"+
               "<div class='card'  id='"+key+"' onclick='getdataModal(this.id)'>"+
               "<img src='"+value.imageURL+"' class='clients-img aos-init aos-animate''>"+
               "<div class='card-body'><p class='card-text'>"+value.text+"</p>"+
               "<button class='btn btn-danger' id='"+key+"' onclick='delete_post(this.id)'>Удалить</button><p class='card-text'>"+value.date+"</p>"+
           
-              "</div></div></div>"+posts_div.innerHTML;
+              "</div></div></div>"+tracks_div.innerHTML;
    
    
    }
@@ -119,7 +118,7 @@ var firebaseConfig = {
    
    
    
-   posts.onclick = function() {
+   tracks.onclick = function() {
       modal.style.display = "block";
     
       

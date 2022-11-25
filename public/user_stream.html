@@ -54,33 +54,45 @@
             </div>
         </div>
     </nav>
-    <div class="blocked"></div>
-    <div class="container mt-5 " >
-        <div class="row">
-            <div class="col-sm-12">
-                <h5 class="text-dark">ДОБАВЛЕНИЕ</h5>
-                <h3 class="font-weight-medium text-dark mb-5">ХАКАТОНА</h3>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <form id="post-form">
-                 
-                    <textarea id="post" class="form-control" placeholder="Заголовок"></textarea>
-                    <textarea id="description" class="form-control" placeholder="Описание"></textarea>
-               	
-               
-                    <textarea id="date" class="form-control" placeholder="Дата начала"></textarea>
-                    <input type="file" class="form-control" id="image" accept="images/*">
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success" onclick="upload()">Загрузить</button>
-                    </div>
+    <div class="page-body-wrapper">
+      <section>
+ 
+    <div class="videos">
+      <span>
+    
+        <video id="webcamVideo" autoplay playsinline></video>
+      </span>
+      <span>
+    
+        <video id="remoteVideo" autoplay playsinline></video>
+      </span>
+      
 
-                </form>
-             </div>
 
-        </div>
-        <div class="row mt-4" id="posts" onclick='getdataModal(this.id)'>
+    </div>
+    <div class="left-btn align-items-center">
+      <div class="inputBox col-sm-2">
+    <button class="btn btn-success" id="webcamButton">Включить камеру</button>
+    </div>
+    <div class="inputBox col-sm-2">
+    <button class="btn btn-secondary" id="callButton" disabled>Новый вызов</button>
+  </div>
+  <div class="inputBox col-sm-4">
+    <input id="callInput" type="tel" placeholder="Введдите код комнаты"/>
+  </div>
+  <div class="inputBox col-sm-2">
+    <button class="btn btn-success" id="answerButton" disabled>Подключиться</button>
+  </div>
+  <div class="inputBox col-sm-2">
+ 
+
+    <button class="btn btn-danger" id="hangupButton" disabled>Отключиться</button>
+  </div>
+  </div>
+  
+</section>
+<section>
+    <div class="row mt-4" id="checkpoints" onclick='getdataModal(this.id)'>
 
        
 
@@ -95,24 +107,26 @@
          <p></p>
        </div>
     </div>
-</div>
+</section>
+
+    </div>
+  
+
+    <script src="vendors/base/vendor.bundle.base.js"></script>
+    <script src="vendors/owl.carousel/js/owl.carousel.js"></script>
+    <script src="vendors/aos/js/aos.js"></script>
+    <script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
+    <script src="./js/template.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <script type="module" src="./js/stream.js"></script>
+ 
     
 
-</body>
-<script src="vendors/base/vendor.bundle.base.js"></script>
-<script src="vendors/owl.carousel/js/owl.carousel.js"></script>
-<script src="vendors/aos/js/aos.js"></script>
-<script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
-<script src="./js/template.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
 
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
-
-
-<script src="./js/add_public.js"></script>
+  </body>
 </html>

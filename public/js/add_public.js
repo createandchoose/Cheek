@@ -14,7 +14,6 @@ var firebaseConfig = {
 
 	  var post=document.getElementById('post').value;
 	  var description=document.getElementById('description').value;
-	  var video=document.getElementById('video').value;
 	  var date=document.getElementById('date').value;
 	  var imageName=image.name;
 
@@ -35,7 +34,6 @@ var firebaseConfig = {
 				firebase.database().ref('hackaton/').push().set({
 						text:post,
 						description:description,
-						video:video,
 						date:date,
 						imageURL:downloadURL,
 						
@@ -146,3 +144,6 @@ var firebaseConfig = {
 		} else {
 		}
 	 });
+
+
+	 

@@ -42,7 +42,7 @@ function register() {
             database_ref.child('users/' + user.uid).set(user_data)
 
             alert('Аккаунт создан')
-            window.open('index.html');
+            window.open('hackatons.html');
         })
         .catch(function(error) {
             var error_code = error.code
@@ -75,7 +75,7 @@ function login() {
 
             // DOne
             alert('Успешный вход')
-            window.open('index.html');
+            window.open('hackatons.html');
 
         })
         .catch(function(error) {

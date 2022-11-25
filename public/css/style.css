@@ -8838,6 +8838,7 @@ table {
     border-collapse: collapse;
 }
 
+
 caption {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -15640,6 +15641,10 @@ button.bg-dark:focus {
     margin-right: auto;
     align-items: center !important;
 }
+.align-items {
+
+    align-items: center !important;
+}
 
 .align-items-baseline {
     align-items: baseline !important;
@@ -19073,6 +19078,22 @@ html {
         padding-top: 71px;
     }
 }
+.home2 {
+    background: url("../images/FQA.png");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: 0 -150px;
+    padding-top: 103px;
+    height: 700px;
+}
+
+@media (max-width: 991px) {
+    .home2 {
+        padding-top: 71px;
+    }
+}
 
 .main-banner {
     padding: 4.2rem 0 14rem 0;
@@ -19585,3 +19606,30 @@ section {
         margin-top: 50px;
     }
 }
+
+.blocked{
+    margin-top: 10%;
+}
+.text-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: grey;
+    background-clip: border-box;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 15px;
+    
+  }
+  .service-text-big{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .service-text-small{
+    font-size: 16px;
+  
+    color: #fff;
+  }
