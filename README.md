@@ -39,9 +39,6 @@
 
 ## Устновка
 
-```
-npm i
-```
 
 ```
 npm install firebase
