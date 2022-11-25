@@ -36,3 +36,12 @@
 - Tailwindcss
 - headlessUI
 - heroicons
+
+
+
+# HACK-the-ICE 4.0 [Website](https://ityakutia.com/hack-the-ice) [VK](https://vk.com/hacktheice) [Telegram](https://t.me/hacktheice) 
+
+Проект был сделан в рамках хакатона (2022)
+
+<img src="https://i.imgur.com/BqUeg7Y.jpg" draggable="false"><br>
+
