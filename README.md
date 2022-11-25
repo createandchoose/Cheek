@@ -39,7 +39,7 @@
 
 
 
-# HACK-the-ICE 4.0 [ [Website](https://ityakutia.com/hack-the-ice) ] [VK](https://vk.com/hacktheice) [Telegram](https://t.me/hacktheice) 
+# HACK-the-ICE 4.0 [ [Website](https://ityakutia.com/hack-the-ice) ] [ [VK](https://vk.com/hacktheice) ] [ [Telegram](https://t.me/hacktheice) ] 
 
 Проект был сделан в рамках хакатона (2022)
 
