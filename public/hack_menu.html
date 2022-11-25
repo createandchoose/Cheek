@@ -21,12 +21,25 @@
                 <h5 class="text-dark">ПРЕДСТОЯЩИЕ</h5>
                 <h3 class="font-weight-medium text-dark mb-5">ХАКАТОНЫ</h3>
             </div>
+            <div class="row mt-4" id="posts"></div>
         </div>
-     
-        <div class="row mt-4" id="posts">
+        <div class="row">
+            <div class="col-sm-12">
+                <h5 class="text-dark">ТРЕКИ</h5>
+                <h3 class="font-weight-medium text-dark mb-5">ХАКАТОНА</h3>
+            </div>
+            <div class="row mt-4" id="tracks" onclick='getdataModal(this.id)'></div>
+            <div id="myModal" class="modal">
+                <div class="modal-content" id="modal-content">
+                  <span class="close">&times;</span>
+                  <p></p>
+                </div>
+             </div>
+        </div>
+  
 
     
-
+       
     </div>
 
 
@@ -46,5 +59,6 @@
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
 
 
-<script src="./js/hackatons.js"></script>
+<script src="./js/hack_menu.js"></script>
+
 </html>

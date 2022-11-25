@@ -60,7 +60,7 @@ var firebaseConfig = {
    
    function getdata(){
         firebase.database().ref('tracks/').once('value').then(function(snapshot){
-           var posts_div=document.getElementById('posts');
+           var posts_div=document.getElementById('tracks');
            posts.innerHTML="";
    
            var data=snapshot.val();

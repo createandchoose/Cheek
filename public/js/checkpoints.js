@@ -17,8 +17,8 @@ var firebaseConfig = {
   
   
   function getdata(){
-		firebase.database().ref('hackaton/').limitToLast(1).once('value').then(function(snapshot){
-		  var posts_div=document.getElementById('posts');
+		firebase.database().ref('checkpoints/').once('value').then(function(snapshot){
+		  var posts_div=document.getElementById('checkpoints');
 		  posts.innerHTML="";
   
 		  var data=snapshot.val();

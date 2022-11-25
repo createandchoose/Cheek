@@ -19,18 +19,42 @@
         <div class="row">
             <div class="col-sm-12">
                 <h5 class="text-dark">ДОБАВЛЕНИЕ</h5>
-                <h3 class="font-weight-medium text-dark mb-5">ХАКАТОНА</h3>
+                <h3 class="font-weight-medium text-dark mb-5">ЧЕКПОИНТА</h3>
             </div>
         </div>
-     
-        <div class="row mt-4" id="posts">
+        <div class="card">
+            <div class="card-body">
+                <form id="post-form">
+                 
+                    <textarea id="post" class="form-control" placeholder="Заголовок"></textarea>
+                    <textarea id="description" class="form-control" placeholder="Описание"></textarea>
+               	
+               
+                    <textarea id="date" class="form-control" placeholder="Дата начала"></textarea>
+                    <input type="file" class="form-control" id="image" accept="images/*">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success" onclick="upload()">Загрузить</button>
+                    </div>
 
-    
+                </form>
+             </div>
+
+        </div>
+        <div class="row mt-4" id="posts" onclick='getdataModal(this.id)'>
+
+       
 
     </div>
 
 
+    <div id="myModal" class="modal">
 
+       <!-- Modal content -->
+       <div class="modal-content" id="modal-content">
+         <span class="close">&times;</span>
+         <p></p>
+       </div>
+    </div>
 </div>
     
 
